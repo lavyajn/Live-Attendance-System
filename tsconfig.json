@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./server/src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "module": "commonjs",
+    "target": "es2016",
+    
+    // CRITICAL FIX: Allows "import express from 'express'" to work
+    "esModuleInterop": true,
+
+    // CRITICAL FIX: Removed "types": [] so it can find Node and Express types automatically
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Recommended Options
+    "strict": true,
+    "skipLibCheck": true,
+    
+    // Optional: Keep these if you specifically need them, but they are advanced
+    "verbatimModuleSyntax": false, 
+    "moduleDetection": "force"
+  }
+}
